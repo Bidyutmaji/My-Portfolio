@@ -1,0 +1,6 @@
+tenorflow-cpu
+tensorflow_hub
+numpy
+pandas
+django
+django-heroku
