@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  {% load static %}
+  
+  <link href="{% static 'assets/rm-apc-profile.ico' %}" rel="icon">
+
+  <title>04: Contact</title>  
+<link href="{% static 'css/style.css' %}" rel="stylesheet"
+></head>
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="{% url 'index' %}" title="">01 : Home</a></li>
+          <li><a href="{% url 'works' %}" title="">02 : Works</a></li>
+          <li><a href="{% url 'about' %}" title="">03 : About me</a></li>
+          <li><a href="{% url 'contact' %}" title="">04 : Contact</a></li>
+        </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">04: Contact</h1>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+               <form action="" class="reveal-content">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <form method='POST'>
+                        {% csrf_token %}
+                      <div class="form-group">
+                        {{form.mail}}
+                      </div>
+                      <div class="form-group">
+                        
+                        {{form.subject}}
+                      </div>
+                      <div class="form-group">
+                        {{form.message}}
+                      </div>
+                      <input type="submit" class="btn btn-default btn-lg" value='Sent'>
+                    </div>
+                    <div class="col-md-5 address-container">
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                          </span>
+                          +91 6395793063
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                          </span>
+                          bidyutmaji12345@gmail.com
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa fa-map-marker" aria-hidden="true"></i>
+                          </span>
+                          Tamluk, West Bengal, 721172, India
+                        </li>
+                      </ul>
+                      <h3>Others:</h3>
+                      <a href="https://github.com/Bidyutmaji" target='_blank' title="" class="fa-icon">
+                        <b class="fa fa-github"></b>
+                      </a>
+                      <a href="mailto:bidyutmaji12345@gmail.com" title="" target='_blank' class="fa-icon">
+                        <b class="fa fa-inbox"></b>
+                      </a>
+                      <a href="http://wa.me/919735001136" title="" target='_blank' class="fa-icon">
+                        <b class="fa fa-whatsapp"></b>
+                      </a>
+
+                    </div>
+                  </div>
+                </form>
+            </div>
+
+          </div>
+         
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+       type();
+       movingBackgroundImage();
+    });
+  </script>
+  
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+  
+</html>
