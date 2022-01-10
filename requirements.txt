@@ -1,4 +1,4 @@
-tenorflow-cpu
+tensorflow-cpu
 tensorflow_hub
 numpy
 pandas
